@@ -1,0 +1,801 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0404653F2117F77D0090F469 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404653E2117F77D0090F469 /* AppDelegate.swift */; };
+		040465412117F77D0090F469 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040465402117F77D0090F469 /* ViewController.swift */; };
+		040465442117F77D0090F469 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040465422117F77D0090F469 /* Main.storyboard */; };
+		040465462117F7800090F469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040465452117F7800090F469 /* Assets.xcassets */; };
+		040465492117F7800090F469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040465472117F7800090F469 /* LaunchScreen.storyboard */; };
+		040465542117F7800090F469 /* Swift_OpenSSL_AES__Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040465532117F7800090F469 /* Swift_OpenSSL_AES__Tests.swift */; };
+		0404655F2117F7800090F469 /* Swift_OpenSSL_AES__UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404655E2117F7800090F469 /* Swift_OpenSSL_AES__UITests.swift */; };
+		040465C52117FD940090F469 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 040465C32117FD940090F469 /* libcrypto.a */; };
+		040465C62117FD940090F469 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 040465C42117FD940090F469 /* libssl.a */; };
+		043F0B3C21199C480000ECCE /* openssl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F0B3B21199C480000ECCE /* openssl.swift */; };
+		044F7C2121192E63006C6B81 /* rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 044F7C1F21192E63006C6B81 /* rsa_private_key.pem */; };
+		044F7C2221192E63006C6B81 /* rsa_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 044F7C2021192E63006C6B81 /* rsa_public_key.pem */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		040465502117F7800090F469 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 040465332117F77D0090F469 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0404653A2117F77D0090F469;
+			remoteInfo = "Swift OpenSSL AES加密";
+		};
+		0404655B2117F7800090F469 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 040465332117F77D0090F469 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0404653A2117F77D0090F469;
+			remoteInfo = "Swift OpenSSL AES加密";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0404653B2117F77D0090F469 /* Swift OpenSSL AES加密.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift OpenSSL AES加密.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0404653E2117F77D0090F469 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		040465402117F77D0090F469 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		040465432117F77D0090F469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		040465452117F7800090F469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		040465482117F7800090F469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0404654A2117F7800090F469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0404654F2117F7800090F469 /* Swift OpenSSL AES加密Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift OpenSSL AES加密Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		040465532117F7800090F469 /* Swift_OpenSSL_AES__Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_OpenSSL_AES__Tests.swift; sourceTree = "<group>"; };
+		040465552117F7800090F469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0404655A2117F7800090F469 /* Swift OpenSSL AES加密UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift OpenSSL AES加密UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0404655E2117F7800090F469 /* Swift_OpenSSL_AES__UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_OpenSSL_AES__UITests.swift; sourceTree = "<group>"; };
+		040465602117F7800090F469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0404656D2117F7C70090F469 /* pem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem2.h; sourceTree = "<group>"; };
+		0404656E2117F7C70090F469 /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
+		0404656F2117F7C70090F469 /* ssl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl3.h; sourceTree = "<group>"; };
+		040465702117F7C70090F469 /* ossl_typ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ossl_typ.h; sourceTree = "<group>"; };
+		040465712117F7C70090F469 /* dtls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtls1.h; sourceTree = "<group>"; };
+		040465722117F7C70090F469 /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		040465732117F7C70090F469 /* bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn.h; sourceTree = "<group>"; };
+		040465742117F7C70090F469 /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		040465752117F7C70090F469 /* cms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cms.h; sourceTree = "<group>"; };
+		040465762117F7C70090F469 /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
+		040465772117F7C70090F469 /* conf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf_api.h; sourceTree = "<group>"; };
+		040465782117F7C70090F469 /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
+		040465792117F7C70090F469 /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1_mac.h; sourceTree = "<group>"; };
+		0404657A2117F7C70090F469 /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		0404657B2117F7C70090F469 /* kssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kssl.h; sourceTree = "<group>"; };
+		0404657C2117F7C70090F469 /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		0404657D2117F7C70090F469 /* symhacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symhacks.h; sourceTree = "<group>"; };
+		0404657E2117F7C70090F469 /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		0404657F2117F7C70090F469 /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
+		040465802117F7C70090F469 /* bio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bio.h; sourceTree = "<group>"; };
+		040465812117F7C70090F469 /* rc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc2.h; sourceTree = "<group>"; };
+		040465822117F7C70090F469 /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		040465832117F7C70090F469 /* ui_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui_compat.h; sourceTree = "<group>"; };
+		040465842117F7C70090F469 /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
+		040465852117F7C70090F469 /* ssl23.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl23.h; sourceTree = "<group>"; };
+		040465862117F7C70090F469 /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		040465872117F7C70090F469 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		040465882117F7C70090F469 /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
+		040465892117F7C70090F469 /* txt_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = txt_db.h; sourceTree = "<group>"; };
+		0404658A2117F7C70090F469 /* safestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safestack.h; sourceTree = "<group>"; };
+		0404658B2117F7C70090F469 /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		0404658C2117F7C70090F469 /* objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objects.h; sourceTree = "<group>"; };
+		0404658D2117F7C70090F469 /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs12.h; sourceTree = "<group>"; };
+		0404658E2117F7C70090F469 /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
+		0404658F2117F7C70090F469 /* opensslv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslv.h; sourceTree = "<group>"; };
+		040465902117F7C70090F469 /* pkcs7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs7.h; sourceTree = "<group>"; };
+		040465912117F7C70090F469 /* obj_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obj_mac.h; sourceTree = "<group>"; };
+		040465922117F7C70090F469 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		040465932117F7C70090F469 /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		040465942117F7C70090F469 /* srp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srp.h; sourceTree = "<group>"; };
+		040465952117F7C70090F469 /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
+		040465962117F7C70090F469 /* evp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evp.h; sourceTree = "<group>"; };
+		040465972117F7C70090F469 /* e_os2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = e_os2.h; sourceTree = "<group>"; };
+		040465982117F7C70090F469 /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		040465992117F7C70090F469 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		0404659A2117F7C70090F469 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		0404659B2117F7C70090F469 /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp.h; sourceTree = "<group>"; };
+		0404659C2117F7C70090F469 /* cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cast.h; sourceTree = "<group>"; };
+		0404659D2117F7C70090F469 /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		0404659E2117F7C70090F469 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		0404659F2117F7C70090F469 /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		040465A02117F7C70090F469 /* ocsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocsp.h; sourceTree = "<group>"; };
+		040465A12117F7C70090F469 /* ec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ec.h; sourceTree = "<group>"; };
+		040465A22117F7C70090F469 /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
+		040465A32117F7C70090F469 /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		040465A42117F7C70090F469 /* ts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ts.h; sourceTree = "<group>"; };
+		040465A52117F7C70090F469 /* pqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqueue.h; sourceTree = "<group>"; };
+		040465A62117F7C70090F469 /* dso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dso.h; sourceTree = "<group>"; };
+		040465A72117F7C70090F469 /* seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seed.h; sourceTree = "<group>"; };
+		040465A82117F7C70090F469 /* modes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modes.h; sourceTree = "<group>"; };
+		040465A92117F7C70090F469 /* ssl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl2.h; sourceTree = "<group>"; };
+		040465AA2117F7C70090F469 /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		040465AB2117F7C70090F469 /* krb5_asn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krb5_asn.h; sourceTree = "<group>"; };
+		040465AC2117F7C70090F469 /* des_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des_old.h; sourceTree = "<group>"; };
+		040465AD2117F7C70090F469 /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd.h; sourceTree = "<group>"; };
+		040465AE2117F7C70090F469 /* whrlpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whrlpool.h; sourceTree = "<group>"; };
+		040465AF2117F7C70090F469 /* tls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tls1.h; sourceTree = "<group>"; };
+		040465B02117F7C70090F469 /* mdc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdc2.h; sourceTree = "<group>"; };
+		040465B12117F7C70090F469 /* dsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsa.h; sourceTree = "<group>"; };
+		040465B22117F7C70090F469 /* srtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srtp.h; sourceTree = "<group>"; };
+		040465B32117F7C70090F469 /* asn1t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1t.h; sourceTree = "<group>"; };
+		040465B42117F7C70090F469 /* cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmac.h; sourceTree = "<group>"; };
+		040465B52117F7C70090F469 /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebcdic.h; sourceTree = "<group>"; };
+		040465B62117F7C70090F469 /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
+		040465B72117F7C70090F469 /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
+		040465BC2117F7DB0090F469 /* Swift OpenSSL AES加密-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift OpenSSL AES加密-Bridging-Header.h"; sourceTree = "<group>"; };
+		040465C32117FD940090F469 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		040465C42117FD940090F469 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		043F0B3B21199C480000ECCE /* openssl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openssl.swift; sourceTree = "<group>"; };
+		044F7C1F21192E63006C6B81 /* rsa_private_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_private_key.pem; sourceTree = "<group>"; };
+		044F7C2021192E63006C6B81 /* rsa_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_public_key.pem; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		040465382117F77D0090F469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040465C62117FD940090F469 /* libssl.a in Frameworks */,
+				040465C52117FD940090F469 /* libcrypto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0404654C2117F7800090F469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040465572117F7800090F469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040465322117F77D0090F469 = {
+			isa = PBXGroup;
+			children = (
+				0404653D2117F77D0090F469 /* Swift OpenSSL AES加密 */,
+				040465522117F7800090F469 /* Swift OpenSSL AES加密Tests */,
+				0404655D2117F7800090F469 /* Swift OpenSSL AES加密UITests */,
+				0404653C2117F77D0090F469 /* Products */,
+				040465C02117FD090090F469 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0404653C2117F77D0090F469 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0404653B2117F77D0090F469 /* Swift OpenSSL AES加密.app */,
+				0404654F2117F7800090F469 /* Swift OpenSSL AES加密Tests.xctest */,
+				0404655A2117F7800090F469 /* Swift OpenSSL AES加密UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0404653D2117F77D0090F469 /* Swift OpenSSL AES加密 */ = {
+			isa = PBXGroup;
+			children = (
+				0404656C2117F7C70090F469 /* openssl */,
+				0404653E2117F77D0090F469 /* AppDelegate.swift */,
+				040465402117F77D0090F469 /* ViewController.swift */,
+				043F0B3B21199C480000ECCE /* openssl.swift */,
+				040465422117F77D0090F469 /* Main.storyboard */,
+				040465452117F7800090F469 /* Assets.xcassets */,
+				040465472117F7800090F469 /* LaunchScreen.storyboard */,
+				0404654A2117F7800090F469 /* Info.plist */,
+				040465BC2117F7DB0090F469 /* Swift OpenSSL AES加密-Bridging-Header.h */,
+				044F7C1E21192E63006C6B81 /* rsa */,
+			);
+			path = "Swift OpenSSL AES加密";
+			sourceTree = "<group>";
+		};
+		040465522117F7800090F469 /* Swift OpenSSL AES加密Tests */ = {
+			isa = PBXGroup;
+			children = (
+				040465532117F7800090F469 /* Swift_OpenSSL_AES__Tests.swift */,
+				040465552117F7800090F469 /* Info.plist */,
+			);
+			path = "Swift OpenSSL AES加密Tests";
+			sourceTree = "<group>";
+		};
+		0404655D2117F7800090F469 /* Swift OpenSSL AES加密UITests */ = {
+			isa = PBXGroup;
+			children = (
+				0404655E2117F7800090F469 /* Swift_OpenSSL_AES__UITests.swift */,
+				040465602117F7800090F469 /* Info.plist */,
+			);
+			path = "Swift OpenSSL AES加密UITests";
+			sourceTree = "<group>";
+		};
+		0404656C2117F7C70090F469 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				040465C32117FD940090F469 /* libcrypto.a */,
+				040465C42117FD940090F469 /* libssl.a */,
+				0404656D2117F7C70090F469 /* pem2.h */,
+				0404656E2117F7C70090F469 /* pem.h */,
+				0404656F2117F7C70090F469 /* ssl3.h */,
+				040465702117F7C70090F469 /* ossl_typ.h */,
+				040465712117F7C70090F469 /* dtls1.h */,
+				040465722117F7C70090F469 /* err.h */,
+				040465732117F7C70090F469 /* bn.h */,
+				040465742117F7C70090F469 /* blowfish.h */,
+				040465752117F7C70090F469 /* cms.h */,
+				040465762117F7C70090F469 /* engine.h */,
+				040465772117F7C70090F469 /* conf_api.h */,
+				040465782117F7C70090F469 /* x509.h */,
+				040465792117F7C70090F469 /* asn1_mac.h */,
+				0404657A2117F7C70090F469 /* ui.h */,
+				0404657B2117F7C70090F469 /* kssl.h */,
+				0404657C2117F7C70090F469 /* sha.h */,
+				0404657D2117F7C70090F469 /* symhacks.h */,
+				0404657E2117F7C70090F469 /* asn1.h */,
+				0404657F2117F7C70090F469 /* opensslconf.h */,
+				040465802117F7C70090F469 /* bio.h */,
+				040465812117F7C70090F469 /* rc2.h */,
+				040465822117F7C70090F469 /* dh.h */,
+				040465832117F7C70090F469 /* ui_compat.h */,
+				040465842117F7C70090F469 /* x509v3.h */,
+				040465852117F7C70090F469 /* ssl23.h */,
+				040465862117F7C70090F469 /* conf.h */,
+				040465872117F7C70090F469 /* md5.h */,
+				040465882117F7C70090F469 /* x509_vfy.h */,
+				040465892117F7C70090F469 /* txt_db.h */,
+				0404658A2117F7C70090F469 /* safestack.h */,
+				0404658B2117F7C70090F469 /* ecdsa.h */,
+				0404658C2117F7C70090F469 /* objects.h */,
+				0404658D2117F7C70090F469 /* pkcs12.h */,
+				0404658E2117F7C70090F469 /* crypto.h */,
+				0404658F2117F7C70090F469 /* opensslv.h */,
+				040465902117F7C70090F469 /* pkcs7.h */,
+				040465912117F7C70090F469 /* obj_mac.h */,
+				040465922117F7C70090F469 /* buffer.h */,
+				040465932117F7C70090F469 /* ssl.h */,
+				040465942117F7C70090F469 /* srp.h */,
+				040465952117F7C70090F469 /* camellia.h */,
+				040465962117F7C70090F469 /* evp.h */,
+				040465972117F7C70090F469 /* e_os2.h */,
+				040465982117F7C70090F469 /* md4.h */,
+				040465992117F7C70090F469 /* hmac.h */,
+				0404659A2117F7C70090F469 /* aes.h */,
+				0404659B2117F7C70090F469 /* comp.h */,
+				0404659C2117F7C70090F469 /* cast.h */,
+				0404659D2117F7C70090F469 /* rc4.h */,
+				0404659E2117F7C70090F469 /* stack.h */,
+				0404659F2117F7C70090F469 /* des.h */,
+				040465A02117F7C70090F469 /* ocsp.h */,
+				040465A12117F7C70090F469 /* ec.h */,
+				040465A22117F7C70090F469 /* ecdh.h */,
+				040465A32117F7C70090F469 /* rand.h */,
+				040465A42117F7C70090F469 /* ts.h */,
+				040465A52117F7C70090F469 /* pqueue.h */,
+				040465A62117F7C70090F469 /* dso.h */,
+				040465A72117F7C70090F469 /* seed.h */,
+				040465A82117F7C70090F469 /* modes.h */,
+				040465A92117F7C70090F469 /* ssl2.h */,
+				040465AA2117F7C70090F469 /* rsa.h */,
+				040465AB2117F7C70090F469 /* krb5_asn.h */,
+				040465AC2117F7C70090F469 /* des_old.h */,
+				040465AD2117F7C70090F469 /* ripemd.h */,
+				040465AE2117F7C70090F469 /* whrlpool.h */,
+				040465AF2117F7C70090F469 /* tls1.h */,
+				040465B02117F7C70090F469 /* mdc2.h */,
+				040465B12117F7C70090F469 /* dsa.h */,
+				040465B22117F7C70090F469 /* srtp.h */,
+				040465B32117F7C70090F469 /* asn1t.h */,
+				040465B42117F7C70090F469 /* cmac.h */,
+				040465B52117F7C70090F469 /* ebcdic.h */,
+				040465B62117F7C70090F469 /* idea.h */,
+				040465B72117F7C70090F469 /* lhash.h */,
+			);
+			path = openssl;
+			sourceTree = "<group>";
+		};
+		040465C02117FD090090F469 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		044F7C1E21192E63006C6B81 /* rsa */ = {
+			isa = PBXGroup;
+			children = (
+				044F7C1F21192E63006C6B81 /* rsa_private_key.pem */,
+				044F7C2021192E63006C6B81 /* rsa_public_key.pem */,
+			);
+			path = rsa;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0404653A2117F77D0090F469 /* Swift OpenSSL AES加密 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040465632117F7800090F469 /* Build configuration list for PBXNativeTarget "Swift OpenSSL AES加密" */;
+			buildPhases = (
+				040465372117F77D0090F469 /* Sources */,
+				040465382117F77D0090F469 /* Frameworks */,
+				040465392117F77D0090F469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swift OpenSSL AES加密";
+			productName = "Swift OpenSSL AES加密";
+			productReference = 0404653B2117F77D0090F469 /* Swift OpenSSL AES加密.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0404654E2117F7800090F469 /* Swift OpenSSL AES加密Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040465662117F7800090F469 /* Build configuration list for PBXNativeTarget "Swift OpenSSL AES加密Tests" */;
+			buildPhases = (
+				0404654B2117F7800090F469 /* Sources */,
+				0404654C2117F7800090F469 /* Frameworks */,
+				0404654D2117F7800090F469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				040465512117F7800090F469 /* PBXTargetDependency */,
+			);
+			name = "Swift OpenSSL AES加密Tests";
+			productName = "Swift OpenSSL AES加密Tests";
+			productReference = 0404654F2117F7800090F469 /* Swift OpenSSL AES加密Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		040465592117F7800090F469 /* Swift OpenSSL AES加密UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040465692117F7800090F469 /* Build configuration list for PBXNativeTarget "Swift OpenSSL AES加密UITests" */;
+			buildPhases = (
+				040465562117F7800090F469 /* Sources */,
+				040465572117F7800090F469 /* Frameworks */,
+				040465582117F7800090F469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0404655C2117F7800090F469 /* PBXTargetDependency */,
+			);
+			name = "Swift OpenSSL AES加密UITests";
+			productName = "Swift OpenSSL AES加密UITests";
+			productReference = 0404655A2117F7800090F469 /* Swift OpenSSL AES加密UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		040465332117F77D0090F469 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = XY;
+				TargetAttributes = {
+					0404653A2117F77D0090F469 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+					0404654E2117F7800090F469 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 0404653A2117F77D0090F469;
+					};
+					040465592117F7800090F469 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 0404653A2117F77D0090F469;
+					};
+				};
+			};
+			buildConfigurationList = 040465362117F77D0090F469 /* Build configuration list for PBXProject "Swift OpenSSL AES加密" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 040465322117F77D0090F469;
+			productRefGroup = 0404653C2117F77D0090F469 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0404653A2117F77D0090F469 /* Swift OpenSSL AES加密 */,
+				0404654E2117F7800090F469 /* Swift OpenSSL AES加密Tests */,
+				040465592117F7800090F469 /* Swift OpenSSL AES加密UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		040465392117F77D0090F469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040465492117F7800090F469 /* LaunchScreen.storyboard in Resources */,
+				044F7C2221192E63006C6B81 /* rsa_public_key.pem in Resources */,
+				040465462117F7800090F469 /* Assets.xcassets in Resources */,
+				040465442117F77D0090F469 /* Main.storyboard in Resources */,
+				044F7C2121192E63006C6B81 /* rsa_private_key.pem in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0404654D2117F7800090F469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040465582117F7800090F469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		040465372117F77D0090F469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043F0B3C21199C480000ECCE /* openssl.swift in Sources */,
+				040465412117F77D0090F469 /* ViewController.swift in Sources */,
+				0404653F2117F77D0090F469 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0404654B2117F7800090F469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040465542117F7800090F469 /* Swift_OpenSSL_AES__Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040465562117F7800090F469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0404655F2117F7800090F469 /* Swift_OpenSSL_AES__UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		040465512117F7800090F469 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0404653A2117F77D0090F469 /* Swift OpenSSL AES加密 */;
+			targetProxy = 040465502117F7800090F469 /* PBXContainerItemProxy */;
+		};
+		0404655C2117F7800090F469 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0404653A2117F77D0090F469 /* Swift OpenSSL AES加密 */;
+			targetProxy = 0404655B2117F7800090F469 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		040465422117F77D0090F469 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				040465432117F77D0090F469 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		040465472117F7800090F469 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				040465482117F7800090F469 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		040465612117F7800090F469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		040465622117F7800090F469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		040465642117F7800090F469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGTD26RF4A;
+				INFOPLIST_FILE = "Swift OpenSSL AES加密/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/$(PROJECT_NAME)/openssl",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wangming.-jibuqi.Swift-OpenSSL-AES--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift OpenSSL AES加密/Swift OpenSSL AES加密-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		040465652117F7800090F469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGTD26RF4A;
+				INFOPLIST_FILE = "Swift OpenSSL AES加密/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/$(PROJECT_NAME)/openssl",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wangming.-jibuqi.Swift-OpenSSL-AES--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift OpenSSL AES加密/Swift OpenSSL AES加密-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		040465672117F7800090F469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGTD26RF4A;
+				INFOPLIST_FILE = "Swift OpenSSL AES加密Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wangming.-jibuqi.Swift-OpenSSL-AES--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift OpenSSL AES加密.app/Swift OpenSSL AES加密";
+			};
+			name = Debug;
+		};
+		040465682117F7800090F469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGTD26RF4A;
+				INFOPLIST_FILE = "Swift OpenSSL AES加密Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wangming.-jibuqi.Swift-OpenSSL-AES--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift OpenSSL AES加密.app/Swift OpenSSL AES加密";
+			};
+			name = Release;
+		};
+		0404656A2117F7800090F469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGTD26RF4A;
+				INFOPLIST_FILE = "Swift OpenSSL AES加密UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wangming.-jibuqi.Swift-OpenSSL-AES--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Swift OpenSSL AES加密";
+			};
+			name = Debug;
+		};
+		0404656B2117F7800090F469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGTD26RF4A;
+				INFOPLIST_FILE = "Swift OpenSSL AES加密UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wangming.-jibuqi.Swift-OpenSSL-AES--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Swift OpenSSL AES加密";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		040465362117F77D0090F469 /* Build configuration list for PBXProject "Swift OpenSSL AES加密" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040465612117F7800090F469 /* Debug */,
+				040465622117F7800090F469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		040465632117F7800090F469 /* Build configuration list for PBXNativeTarget "Swift OpenSSL AES加密" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040465642117F7800090F469 /* Debug */,
+				040465652117F7800090F469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		040465662117F7800090F469 /* Build configuration list for PBXNativeTarget "Swift OpenSSL AES加密Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040465672117F7800090F469 /* Debug */,
+				040465682117F7800090F469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		040465692117F7800090F469 /* Build configuration list for PBXNativeTarget "Swift OpenSSL AES加密UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0404656A2117F7800090F469 /* Debug */,
+				0404656B2117F7800090F469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 040465332117F77D0090F469 /* Project object */;
+}
