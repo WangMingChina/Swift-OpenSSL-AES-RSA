@@ -8,12 +8,12 @@
 
 import Foundation
 
-struct openssl {
+public struct openssl {
     
-    struct AES {
-        let key:String
-        let iv:String
-        init(key:String,iv:String) throws {
+   public struct AES {
+       public let key:String
+       public let iv:String
+       public init(key:String,iv:String) throws {
             self.key = key
             self.iv  = iv
             switch key.count * 8 {
@@ -24,7 +24,7 @@ struct openssl {
             }
         }
         ///自定生成密码和偏移量
-        init() {
+       public init() {
             var key = ""
             var iv = ""
             for i in 0..<32 {
@@ -46,7 +46,7 @@ struct openssl {
             self.key = key
             self.iv  = iv
         }
-        func encrypt(data:Data?) -> Data?{
+       public func encrypt(data:Data?) -> Data?{
             guard let data = data else {
                 return nil
             }
@@ -74,7 +74,7 @@ struct openssl {
             return Data.init(bytes: c_out)
         }
         
-        func encrypt(string:String?) -> Data? {
+       public func encrypt(string:String?) -> Data? {
             guard let dataString = string?.data(using: String.Encoding.utf8)  else {
                 return nil
             }
@@ -82,7 +82,7 @@ struct openssl {
         }
         
         
-        func decrypt(data:Data?)->Data?{
+      public  func decrypt(data:Data?)->Data?{
             guard let data = data else {
                 return nil
             }
@@ -109,7 +109,7 @@ struct openssl {
             let resut = Data.init(bytes: c_out)
             return resut
         }
-        func decrypt(base64String:String?)->String? {
+       public func decrypt(base64String:String?)->String? {
             guard let base64String = base64String else {
                 return nil
             }
@@ -124,13 +124,13 @@ struct openssl {
     }
     
     
-    struct RSA {
+   public struct RSA {
         ///公钥路径
-       static let rsa_public_key  = Bundle.main.path(forResource: "rsa_public_key.pem", ofType: nil, inDirectory: nil)
+      public static let rsa_public_key  = Bundle.main.path(forResource: "rsa_public_key.pem", ofType: nil, inDirectory: nil)
         ///私钥路径
-       static let rsa_private_key = Bundle.main.path(forResource: "rsa_private_key.pem", ofType: nil, inDirectory: nil)
+      public static let rsa_private_key = Bundle.main.path(forResource: "rsa_private_key.pem", ofType: nil, inDirectory: nil)
         ///公钥加密
-       static func publicEncrypt(str:String)->String?{
+      public static func publicEncrypt(str:String)->String?{
             guard var c_data = (str.data(using: String.Encoding.utf8)?.map{$0}) else {
                 return nil
             }
@@ -160,7 +160,7 @@ struct openssl {
         }
        
         ///公钥解密
-       static func publicDecrypt(str:String)->String?{
+     public  static func publicDecrypt(str:String)->String?{
             guard let data = Data.init(base64Encoded: str) else {
                 return nil
             }
@@ -192,7 +192,7 @@ struct openssl {
         ///私钥加密
         ///static func privateEncrypt(str:String)->String?
         ///私钥解密
-        static func privateDecrypt(str:String)->String?{
+      public  static func privateDecrypt(str:String)->String?{
             guard let data = Data.init(base64Encoded: str) else {
                 return nil
             }
