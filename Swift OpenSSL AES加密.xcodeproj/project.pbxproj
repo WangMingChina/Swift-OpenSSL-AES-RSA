@@ -193,7 +193,6 @@
 				040465452117F7800090F469 /* Assets.xcassets */,
 				040465472117F7800090F469 /* LaunchScreen.storyboard */,
 				0404654A2117F7800090F469 /* Info.plist */,
-				040465BC2117F7DB0090F469 /* Swift OpenSSL AES加密-Bridging-Header.h */,
 				044F7C1E21192E63006C6B81 /* rsa */,
 			);
 			path = "Swift OpenSSL AES加密";
@@ -220,6 +219,7 @@
 		0404656C2117F7C70090F469 /* openssl */ = {
 			isa = PBXGroup;
 			children = (
+				040465BC2117F7DB0090F469 /* Swift OpenSSL AES加密-Bridging-Header.h */,
 				043F0B3B21199C480000ECCE /* openssl.swift */,
 				040465C32117FD940090F469 /* libcrypto.a */,
 				040465C42117FD940090F469 /* libssl.a */,
@@ -642,7 +642,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "wangming.-jibuqi.Swift-OpenSSL-AES--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Swift OpenSSL AES加密/Swift OpenSSL AES加密-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift OpenSSL AES加密/openssl/Swift OpenSSL AES加密-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -668,7 +668,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "wangming.-jibuqi.Swift-OpenSSL-AES--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Swift OpenSSL AES加密/Swift OpenSSL AES加密-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift OpenSSL AES加密/openssl/Swift OpenSSL AES加密-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
