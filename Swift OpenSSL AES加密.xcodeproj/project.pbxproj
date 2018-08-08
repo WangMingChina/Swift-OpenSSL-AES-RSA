@@ -189,7 +189,6 @@
 				0404656C2117F7C70090F469 /* openssl */,
 				0404653E2117F77D0090F469 /* AppDelegate.swift */,
 				040465402117F77D0090F469 /* ViewController.swift */,
-				043F0B3B21199C480000ECCE /* openssl.swift */,
 				040465422117F77D0090F469 /* Main.storyboard */,
 				040465452117F7800090F469 /* Assets.xcassets */,
 				040465472117F7800090F469 /* LaunchScreen.storyboard */,
@@ -221,6 +220,7 @@
 		0404656C2117F7C70090F469 /* openssl */ = {
 			isa = PBXGroup;
 			children = (
+				043F0B3B21199C480000ECCE /* openssl.swift */,
 				040465C32117FD940090F469 /* libcrypto.a */,
 				040465C42117FD940090F469 /* libssl.a */,
 				0404656D2117F7C70090F469 /* pem2.h */,
