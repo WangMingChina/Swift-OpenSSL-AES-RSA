@@ -5,12 +5,13 @@ Pod::Spec.new do |s|
 
 
   s.name         = "SwiftOpenSSlAESRSA"
-  s.version      = "1.0.0"
+  s.version      = "2.0.0"
   s.summary      = "Swift OpenSSl AES RSA Encryption to decrypt"
 
 
   s.description  = <<-DESC
-                   swift 使用OpenSSL 加密
+                   swift 使用OpenSSL AES加密
+                   swift 使用OpenSSL RSA加密
                    DESC
 
   s.homepage     = "https://github.com/aaaaa893215155/Swift-OpenSSL-AES-RSA"
