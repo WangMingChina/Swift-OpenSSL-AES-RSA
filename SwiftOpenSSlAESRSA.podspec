@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
 
 
   s.source       = { :git => "https://github.com/aaaaa893215155/Swift-OpenSSL-AES-RSA.git", :tag => s.version.to_s }
-  s.source_files  = "Swift OpenSSL AES加密/openssl/**/*.{h,m,a,swift}"
+  s.source_files  = "Classes/openssl/**/*.{h,m,a,swift}"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
